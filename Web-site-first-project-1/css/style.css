@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+image{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+body {
+width: 1440px;
+height: 1700px;
+left: 0px;
+top: 0px;
+
+background: #E8E8E8;
+}
+
+.content-top-info {
+
+}
+
+.inscription {
+    margin: 110px 706px 13px 291px;
+    font-family: 'ABeeZee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #000000;
+
+}
+
+.list-top {
+    margin: 0px 706px 0px 291px;
+}
+
+.list-top li {
+    margin: 0px 0px 15px 0px;
+    background-image: url('../img/icons/li.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 25px;
+}
+
+.list-top li:nth-child(1){
+    text-decoration: line-through;
+}
+
+.list-top li:nth-child(2){
+    font-weight: 700;
+}
+
+.list-top li:nth-child(3){
+    font-style: italic;
+}
+
+.list-top li:nth-child(4){
+    text-transform: uppercase;
+}
+
+.list-top li:last-child{
+    margin: 0px 0px 75px 0px;
+}
+
+.content-main {
+
+}
+
+.list-main {
+    margin: 0px 706px 0px 291px;
+}
+
+
+
+.list-main li {
+    margin: 0px 0px 15px 0px;
+    background-image: url('../img/icons/li.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 25px;
+}
+
+.content-main-color:hover {
+    color: red;
+}
+
+.content-down {
+    display: block;
+    margin: 103px 706px 0px 291px;
+}
+
+.content-down .button:nth-child(1) {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #666;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-image: url('..//img/icons/arrow.svg');
+    background-repeat: no-repeat;
+}
+
+.content-under-down {
+}
