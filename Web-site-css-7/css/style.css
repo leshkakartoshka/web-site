@@ -40,13 +40,28 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
 body {
     padding: 30px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
 }
 
-.block {
+.list {
+    font-size: 18px;
+    
 }
-.block_1 {
+
+.list li {
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    background: url('../img/icons/li.svg');
 }
-.block_2 {
-}
-.block_3 {
+
+.list li::before {
+    content: url('../img/icons/li.svg');
+    background: url('../img/icons/li.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
