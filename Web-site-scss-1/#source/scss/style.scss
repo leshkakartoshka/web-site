@@ -1,44 +1,52 @@
-*{
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-*,*:before,*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-input,button,textarea{font-family: inherit;}
-
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding: 0;border: 0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-image{vertical-align: top;}
-
-h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+@import "rullstyle";
 
 body {
     color: rgb(225, 255, 0);
-    font-size: 18px;
+    margin: 30px;
+}
+
+$size: 30px;
+$color: purple;
+
+%sborder {
+    border: 5px solid red;
+}
+
+@mixin fontz($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+.block {
+    width: 300px / 960px *100%;
+    background-color: #666;
+    font-size: 14px;
+    line-height: 60px;
+    span {
+        color: green;
+    }
+    .block_text {
+        font-size: $size;
+        p {
+            color: red;
+        }
+    }
+    &.block_big{
+        font-size: $size;
+    }
+}
+
+.link {
+    color: blue;
+    text-decoration: underline;
+    &:hover {
+        color: green;
+    }
+    @extend %sborder;
+}
+
+.link-2 {
+    @include fontz(100px,red);
+    border-bottom: 5px dashed greenyellow;
+    @extend %sborder;
 }

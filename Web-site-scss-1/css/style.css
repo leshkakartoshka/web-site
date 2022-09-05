@@ -72,5 +72,42 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   color: rgb(225, 255, 0);
-  font-size: 18px;
+  margin: 30px;
+}
+
+.link-2, .link {
+  border: 5px solid red;
+}
+
+.block {
+  width: 31.25%;
+  background-color: #666;
+  font-size: 14px;
+  line-height: 60px;
+}
+.block span {
+  color: green;
+}
+.block .block_text {
+  font-size: 30px;
+}
+.block .block_text p {
+  color: red;
+}
+.block.block_big {
+  font-size: 30px;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+.link:hover {
+  color: green;
+}
+
+.link-2 {
+  font-size: 100px;
+  color: red;
+  border-bottom: 5px dashed greenyellow;
 }
