@@ -52,11 +52,10 @@ body {
 .list li {
     margin: 0px 0px 10px 0px;
     position: relative;
-    background: url('../img/icons/li.svg');
 }
 
 .list li::before {
-    content: url('../img/icons/li.svg');
+    content: '';
     background: url('../img/icons/li.svg');
     background-repeat: no-repeat;
     width: 20px;
