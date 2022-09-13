@@ -1,0 +1,45 @@
+@import "rullstyle";
+
+body {
+    margin: 50px;
+    background-color: black;
+}
+
+.wrapper {
+
+}
+
+.content {
+
+		// .content__circle
+
+		&__circle {
+                  width: 100px;
+                  height: 100px;
+                  background-color: #fff;
+                  border-radius: 50%;
+                  position: relative;
+                  left: 0;
+
+                  animation-name: white-circle;
+                  animation-duration: 2s;
+                  animation-timing-function: linear;
+                  animation-iteration-count: infinite;
+                  animation-direction:alternate;
+                  animation-delay: 2s;
+                  animation-fill-mode: forwards;
+		}
+
+            &__circle:hover {
+                  animation-play-state: paused;
+            }
+}
+
+@keyframes white-circle {
+      0% {
+            left: 0;
+      }
+      100% {
+            left: 500px;
+      }
+}
