@@ -1,39 +1,87 @@
 @import "rullstyle";
 
 html,body{
-	height: 100%;
-	background-color: #333;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: #fff;
-	font-size: 16px;
-	line-height: 24px;
-	max-width: 100%;
+	background: #F5F5F5;
+	font-family: "OpenSans";
 }
 
-.grid__body {
-	display: grid;
+.wrapper {
 
-	grid-template-columns: 150px, 1fr;
-	grid-template-rows: 100px, 1fr;
-	grid-template-areas: 
-		"header header"
-		"sidebar content";
 }
 
-.grid__item {
-	text-align: center;
-	border: 2px dashed red;
-	padding: 30px;
+.content {
+	max-width: 1000px;
+	margin: 0px auto;
+	
 }
 
-.grid__header {
-	grid-area: header;
+.logo {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 34px;
+	padding: 60px 0px 130px 0px;
 }
 
-.grid__side {
-	grid-area: sidebar;
-}
+.main {
+	display: flex;
+	justify-content: space-between;
 
-.grid__content {
-	grid-area: content;
+		// .main__image
+
+		&__image {
+			width: 465px;
+			height: 465px;
+			padding: 105px;
+			background: linear-gradient(180deg, #FFE195 0%, #FF5B5B 100%);
+			border-radius: 70px;
+		}
+
+		// .main__body
+
+		&__body {
+		}
+
+		// .main__text
+
+		&__text {
+			width: 390px;
+			// .main__text_top
+
+			&_top {
+				font-family: 'Open Sans';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 50px;
+				line-height: 68px;
+				padding-bottom: 30px;
+			}
+
+			// .main__text_under
+
+			&_under {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 25px;
+				padding-bottom: 30px;
+			}
+		}
+
+		// .main__button
+
+		&__button {
+			display: flex;
+			width: 221px;
+			height: 69px;
+			text-decoration: none;
+			background: #FF6861;
+			border-radius: 100px;
+			align-items: center;
+			color: #fff;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 25px;
+			padding: 20px 70px;
+		}
 }

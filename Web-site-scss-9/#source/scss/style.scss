@@ -1,39 +1,5 @@
 @import "rullstyle";
 
 html,body{
-	height: 100%;
-	background-color: #333;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: #fff;
-	font-size: 16px;
-	line-height: 24px;
-	max-width: 100%;
-}
-
-.grid__body {
-	display: grid;
-
-	grid-template-columns: 150px, 1fr;
-	grid-template-rows: 100px, 1fr;
-	grid-template-areas: 
-		"header header"
-		"sidebar content";
-}
-
-.grid__item {
-	text-align: center;
-	border: 2px dashed red;
-	padding: 30px;
-}
-
-.grid__header {
-	grid-area: header;
-}
-
-.grid__side {
-	grid-area: sidebar;
-}
-
-.grid__content {
-	grid-area: content;
+	
 }
